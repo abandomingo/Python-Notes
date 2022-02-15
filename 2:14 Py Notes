@@ -1,10 +1,69 @@
+
 list1 = [x**2 for x in range(20)]
 print(list1)
 #listcomp.format --> expression + for loop + condition
 listofSquares2 = [x**2 for x in range(20) if x % 2 != 0]
 print(listofSquares2)
 
+listofCubes = [x**3 for x in range(20) if x % 2 != 0]
+print(listofSquares2)
+
 #creates a 2nd copy of the list
 #print x but only print if it is not 25 otherwise replace it with 52 in the listofSquares2
 newList = [x if x != 25 else 52 for x in listofSquares2]
 print(newList)
+"""
+#tuples
+newTuple = ()
+print(type(newTuple))
+tup1 = 1,2,3,4,5,6,7,8,9
+tup2 = ('a','b','c','d','e','f','g','h','i')
+print(tup1)
+print(tup2)
+listofTuples = [tup1 + tup2]
+print(listofTuples)
+
+#you can change the listofCubes[0] but not tupleofLists[0](or list of Cubes)
+tupleofLists = [listofCubes, listofSquares2]
+tupleofLists[0][0] # <---- this means 0 index list of cubes or since tupleoflist[0] = listofcubes[0] and listofcubes[0]
+print(tupleofLists)
+
+tup3 = ('hello', 'goodbye', 'see ya')
+x,y,z = tup3
+
+example = "this is an example sentence"
+left, middle, right = example.partition("an")
+print(left)
+print(middle)
+print(right.strip())
+
+
+#sets ~not ordered ~random ordering ~no dupes
+myShoppingCart = {'ice cream', 'bread', 'milk', 'beer', 'beer', 'cat food', 'soup', 'milk'} 
+print(myShoppingCart)
+
+yourShoppingCart = {'dog food', 'beer', 'frozen dinner', 'wine', 'cat food', 'beer'}
+print(yourShoppingCart)
+
+#make a set using in this set or that set
+print(myShoppingCart | yourShoppingCart)
+#make a set using only things that are in both this set and that set
+print(myShoppingCart & yourShoppingCart)
+#make a set using only things in myShoppingcart but not in yourShoppingcart
+print(myShoppingCart - yourShoppingCart)
+#" " " same as above
+print(yourShoppingCart - myShoppingCart)
+#prints 
+print(myShoppingCart ^ yourShoppingCart)
+"""
+ziplist = []
+
+for squares, cubes in zip(listofCubes, listofSquares2):
+    print("squares = {1}, cube = {0}".format(cubes, squares))
+    ziplist.append((squares,cubes))
+
+print(ziplist)
+
+
+
+
