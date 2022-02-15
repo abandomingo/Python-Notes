@@ -1,0 +1,10 @@
+list1 = [x**2 for x in range(20)]
+print(list1)
+#listcomp.format --> expression + for loop + condition
+listofSquares2 = [x**2 for x in range(20) if x % 2 != 0]
+print(listofSquares2)
+
+#creates a 2nd copy of the list
+#print x but only print if it is not 25 otherwise replace it with 52 in the listofSquares2
+newList = [x if x != 25 else 52 for x in listofSquares2]
+print(newList)
