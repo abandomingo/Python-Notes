@@ -1,4 +1,4 @@
-
+'''
 list1 = [x**2 for x in range(20)]
 print(list1)
 #listcomp.format --> expression + for loop + condition
@@ -12,7 +12,7 @@ print(listofSquares2)
 #print x but only print if it is not 25 otherwise replace it with 52 in the listofSquares2
 newList = [x if x != 25 else 52 for x in listofSquares2]
 print(newList)
-"""
+'''
 #tuples
 newTuple = ()
 print(type(newTuple))
@@ -27,7 +27,7 @@ print(listofTuples)
 tupleofLists = [listofCubes, listofSquares2]
 tupleofLists[0][0] # <---- this means 0 index list of cubes or since tupleoflist[0] = listofcubes[0] and listofcubes[0]
 print(tupleofLists)
-
+'''
 tup3 = ('hello', 'goodbye', 'see ya')
 x,y,z = tup3
 
@@ -55,7 +55,7 @@ print(myShoppingCart - yourShoppingCart)
 print(yourShoppingCart - myShoppingCart)
 #prints 
 print(myShoppingCart ^ yourShoppingCart)
-"""
+
 ziplist = []
 
 for squares, cubes in zip(listofCubes, listofSquares2):
@@ -64,6 +64,6 @@ for squares, cubes in zip(listofCubes, listofSquares2):
 
 print(ziplist)
 
-
+'''
 
 
