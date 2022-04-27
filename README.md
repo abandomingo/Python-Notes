@@ -1,1 +1,2 @@
-# tester Im using this as a way to practice github
+#Notes when I started learning python
+
